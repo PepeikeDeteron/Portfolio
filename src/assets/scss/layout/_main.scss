@@ -45,6 +45,25 @@
 				display: block !important;
 			}
 
+      .contents {
+        width: 95%;
+        padding: 15px 0px 0px 40px;
+      }
+
+      .headline {
+        padding: 10px;
+        border-left: 5px double #FF9100;
+      }
+
+      .description {
+        padding: 0px 0px 0px 30px;
+        font-size: 20px;
+      }
+
+      .space {
+        height: 15px;
+      }
+
 			.close {
 				display: block;
 				position: absolute;
