@@ -2,7 +2,7 @@ import React from 'react'
 import ReactStars from 'react-stars'
 
 const Card = (props) => {
-  const { name, icon, value } = props
+  const { name, icon, value, caption } = props
 
   return (
     <div className="card">
@@ -17,6 +17,7 @@ const Card = (props) => {
           edit={false}
         />
       </p>
+      <aside className="card_caption">{caption}</aside>
     </div>
   )
 }

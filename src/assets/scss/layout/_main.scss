@@ -94,6 +94,12 @@
         width: 80px;
       }
 
+      .card_caption {
+        font-size: .5rem;
+        color: #bbbbbb;
+        padding: 1rem;
+      }
+
       .card_list {
         display: flex;
         flex-flow: row wrap;
