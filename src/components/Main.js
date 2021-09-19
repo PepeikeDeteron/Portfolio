@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import CardContainer from './CardContainer'
 import { skills } from '../data/skills';
+
 class Main extends React.Component {
   render() {
     let close = (
@@ -67,19 +68,19 @@ class Main extends React.Component {
           <h2 className="major">Skills</h2>
           <section className="contents">
             <h3 className="headline">Language</h3>
-            <p className="description">
+            <div className="card_container">
               <CardContainer skills={skills['language']} />
-            </p>
+            </div>
 
             <h3 className="headline">Framework / Library</h3>
-            <p className="description">
+            <div className="card_container">
               <CardContainer skills={skills['FnL']} />
-            </p>
+            </div>
 
             <h3 className="headline">Others</h3>
-            <p className="description">
+            <div className="card_container">
               <CardContainer skills={skills['others']} />
-            </p>
+            </div>
           </section>
           {close}
         </article>

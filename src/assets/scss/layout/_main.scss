@@ -47,7 +47,7 @@
 
       .contents {
         width: 95%;
-        padding: 1rem 0 0 2rem;
+        padding: 0 0 0 1rem;
       }
 
       .headline {
@@ -94,6 +94,10 @@
         flex-flow: row wrap;
         text-align: center;
         gap: 1.5rem;
+      }
+
+      .card_container {
+        padding: 1rem 0 2rem 2rem;
       }
 
 			.close {
