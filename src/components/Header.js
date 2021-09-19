@@ -15,15 +15,6 @@ const Header = props => (
     </div>
     <nav>
       <ul>
-        {/* <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li> */}
         <li>
           <button
             onClick={() => {
@@ -40,6 +31,15 @@ const Header = props => (
             }}
           >
             Skills
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('work')
+            }}
+          >
+            Work
           </button>
         </li>
         <li>

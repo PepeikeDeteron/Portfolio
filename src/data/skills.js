@@ -157,7 +157,7 @@ export const skills = {
       name: 'Raspberry Pi',
       icon: <i class="devicon-raspberrypi-line colored"></i>,
       value: 2,
-      caption: '趣味として簡単な IoT 開発をしていました。'
+      caption: '趣味で簡単な IoT 開発をしていました。'
     },
   ],
 }

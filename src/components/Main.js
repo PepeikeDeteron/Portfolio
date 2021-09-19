@@ -59,6 +59,35 @@ class Main extends React.Component {
         </article>
 
         <article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+       }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Work</h2>
+          <section>
+            <h3 className="headline">卒業研究</h3>
+            <p className="description">
+              カクカク・シカジカ
+            </p>
+
+            <h3 className="headline">高専Mapとは</h3>
+            <p className="description">
+              ホゲホゲ・フガフガ <br />
+            </p>
+
+            <video
+              src="https://firebasestorage.googleapis.com/v0/b/photourl-204a2.appspot.com/o/Video%2Fkosen-map.mp4?alt=media&token=90afd3c3-83b3-4790-86da-593cf2621c7a"
+              controls
+              className="video"
+            ></video>
+
+          </section>
+          {close}
+        </article>
+
+        <article
           id="skills"
           className={`${this.props.article === 'skills' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
