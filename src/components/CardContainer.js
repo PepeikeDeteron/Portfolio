@@ -12,6 +12,7 @@ const CardContainer = (props) => {
             key={skill.name}
             name={skill.name}
             icon={skill.icon}
+            value={skill.value}
           />
         ))}
     </div>
