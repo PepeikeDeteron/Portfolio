@@ -59,8 +59,8 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="skill"
-          className={`${this.props.article === 'skill' ? 'active' : ''} ${
+          id="skills"
+          className={`${this.props.article === 'skills' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}

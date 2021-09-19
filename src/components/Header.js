@@ -36,10 +36,10 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('skill')
+              props.onOpenArticle('skills')
             }}
           >
-            Skill
+            Skills
           </button>
         </li>
         <li>
