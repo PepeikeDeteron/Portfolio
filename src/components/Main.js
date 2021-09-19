@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
-
+import CardContainer from './CardContainer'
+import { skills } from '../data/skills';
 class Main extends React.Component {
   render() {
     let close = (
@@ -66,25 +64,23 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Skill</h2>
-          {/* <span className="image main">
-            <img src={pic02} alt="" />
-          </span> */}
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <h2 className="major">Skills</h2>
+          <section className="contents">
+            <h3 className="headline">Language</h3>
+            <p className="description">
+              <CardContainer skills={skills['language']} />
+            </p>
+
+            <h3 className="headline">Framework / Library</h3>
+            <p className="description">
+              <CardContainer skills={skills['FnL']} />
+            </p>
+
+            <h3 className="headline">Others</h3>
+            <p className="description">
+              <CardContainer skills={skills['others']} />
+            </p>
+          </section>
           {close}
         </article>
 

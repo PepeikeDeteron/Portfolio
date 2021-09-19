@@ -47,21 +47,53 @@
 
       .contents {
         width: 95%;
-        padding: 15px 0px 0px 40px;
+        padding: 1rem 0 0 2rem;
       }
 
       .headline {
-        padding: 10px;
-        border-left: 5px double #FF9100;
+        padding: .3rem 0 .3rem .8rem;
+        border-left: 8px double #FF9100;
       }
 
       .description {
-        padding: 0px 0px 0px 30px;
-        font-size: 20px;
+        padding: 0 0 0 2rem;
       }
 
       .space {
-        height: 15px;
+        height: .8rem;
+      }
+
+      .card {
+        // PC 3カラム
+        width: calc(100% / 3 - 30px);
+        background-color: #333333;
+
+        // タブレット 2カラム
+        @media screen and (max-width: 1024px) {
+          width: calc(100% / 2 - 30px);
+        }
+
+        // スマホ 1カラム
+        @media screen and (max-width: 599px) {
+          width: calc(100% / 1 - 30px);
+        }
+      }
+
+      .card_name {
+        margin: 0 auto;
+        padding: .7rem;
+      }
+
+      .card_icon {
+        margin: 0 auto;
+        font-size: 3rem;
+      }
+
+      .card_list {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        gap: 1.5rem;
       }
 
 			.close {
