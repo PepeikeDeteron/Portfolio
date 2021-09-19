@@ -80,6 +80,8 @@ class Main extends React.Component {
             <video
               src="https://firebasestorage.googleapis.com/v0/b/photourl-204a2.appspot.com/o/Video%2Fkosen-map.mp4?alt=media&token=90afd3c3-83b3-4790-86da-593cf2621c7a"
               controls
+              controlsList="nodownload"
+              onContextMenu="return false;"
               className="video"
             ></video>
 
