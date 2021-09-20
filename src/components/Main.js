@@ -14,6 +14,13 @@ class Main extends React.Component {
       ></div>
     )
 
+    const today = new Date()
+    const todayNumber = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate()
+    const birthdayNumber = 20010408
+
+    // 年齢 = floor((今日 - 誕生日) / 10000)
+    const age = Math.floor((todayNumber - birthdayNumber) / 10000)
+
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -36,7 +43,7 @@ class Main extends React.Component {
 
             <h3 className="headline">Age</h3>
             <p className="description">
-              20
+              {age}
             </p>
 
             <h3 className="headline">Profile</h3>
