@@ -42,15 +42,6 @@ const Header = props => (
             Work
           </button>
         </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
-            Contact
-          </button>
-        </li>
       </ul>
     </nav>
   </header>

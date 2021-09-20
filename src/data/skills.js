@@ -121,7 +121,7 @@ export const skills = {
       name: 'GitHub Actions',
       icon: <i class="devicon-github-original colored"></i>,
       value: 2,
-      caption: 'GitHub Actions や husky & lint-staged で CI を回しています。',
+      caption: 'CI / CD の勉強をしています。',
     },
     {
       name: 'Firebase',

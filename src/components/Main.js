@@ -47,13 +47,26 @@ class Main extends React.Component {
               React を使ったフロントエンドの開発に興味を持っており、
               およそ 2 年前から独学で勉強を続けています。<br />
               <div className="space"/>
-              高専のグループワーク型授業では、UI のデザインやアーキテクチャの
-              設計・実装に携わり、学んだ React の知識を活かしてグループに貢献しました。<br />
+              高専のグループワーク型授業では、UI のデザインや設計・実装に携わり、
+              学んだ React の知識を活かしてグループに貢献しました。<br />
               <div className="space"/>
               最近は、過去に作った Web アプリケーションを TypeScript で書き直したり、
               Storybook を使ったデザイン管理やスナップショットテストを取り入れるなど、
               フロントエンドエンジニアを目指して日々研鑽に励んでいます。
             </p>
+
+            <ul className="icons">
+            <li>
+              <a
+                href="https://github.com/PepeikeDeteron"
+                className="icon fa-github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+          </ul>
           </section>
           {close}
         </article>
@@ -66,7 +79,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Work</h2>
-          <section>
+          <section className="contents">
             <h3 className="headline">卒業研究</h3>
             <p className="description">
               現在私が取り組んでいる卒業研究は、既存の校内地図データに代わり 3D のデータを実装することで、設備の場所 及び内装まで把握が可能になる、
@@ -106,8 +119,8 @@ class Main extends React.Component {
               増すだけでなく、立体地図ならではの視認性の良さも相極まり、使いやすい校内地図サービスが実現されることでしょう。<br />
             </p>
 
-            <p className="description">
             <h3 className="headline">今後の目標</h3>
+            <p className="description">
               このプロジェクトは授業内だけで完遂されたわけではなく、当初実装する予定だった機能が欠けていたり、3D データの読み込みが遅かったりと、お世辞にも利便性の高いものになったとは言えないため、
               私個人でこのプロジェクトを引き継ぎ、この作品の完成及び実用化を目指そうとしています。<br />
               また、グループワーク型授業の成果発表会後日、学生会関係者からこの地図を実際に運用してほしいとの旨の伝達もあったため、実用性のあるシステムとして完成させた成果物を高専に提供することで、
@@ -141,51 +154,6 @@ class Main extends React.Component {
               <CardContainer skills={skills['others']} />
             </div>
           </section>
-          {close}
-        </article>
-
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li>
-              <a
-                href="https://github.com/PepeikeDeteron"
-                className="icon fa-github"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
           {close}
         </article>
       </div>
