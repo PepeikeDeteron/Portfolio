@@ -13,7 +13,7 @@ export const skills = {
       name: 'TypeScript',
       icon: <i class="devicon-typescript-plain colored"></i>,
       value: 3,
-      caption: '独学で 1 年ほど書いています。2021 年現在のメイン言語です。',
+      caption: '独学で 1 年ほど書いています。2021年現在のメイン言語です。',
     },
     {
       name: 'HTML5',
@@ -92,7 +92,7 @@ export const skills = {
     },
     {
       name: 'Next.js',
-      icon: <i class="devicon-nextjs-original-wordmark colored"></i>,
+      icon: <i class="devicon-nextjs-original-wordmark"></i>,
       value: 3,
       caption: 'React 学習を進めていくうちに興味を持ちました。現在もメインで活用しています。',
     },
@@ -104,7 +104,7 @@ export const skills = {
     },
     {
       name: 'Three.js',
-      icon: <i class="devicon-threejs-original colored"></i>,
+      icon: <i class="devicon-threejs-original"></i>,
       value: 2,
       caption: '高専のグループワーク型授業で触れ、現在進めている卒業研究でも活用しています。',
     },
@@ -119,7 +119,7 @@ export const skills = {
     },
     {
       name: 'GitHub Actions',
-      icon: <i class="devicon-github-original colored"></i>,
+      icon: <i class="devicon-github-original"></i>,
       value: 2,
       caption: 'CI / CD の勉強をしています。',
     },
