@@ -89,7 +89,7 @@ class Main extends React.Component {
           <section className="contents">
             <h3 className="headline">卒業研究</h3>
             <p className="description">
-              現在私が取り組んでいる卒業研究は、既存の校内地図データに代わり 3D のデータを実装することで、設備の場所 及び内装まで把握が可能になる、
+              現在私が取り組んでいる卒業研究は、既存の校内地図に代わり 3D の地図データを実装することで、設備の場所 及び内装まで把握が可能になる、
               施設案内に最適化された Web ベースの新しい校内地図サービス「一関高専Map」の開発です。
             </p>
 
@@ -111,7 +111,7 @@ class Main extends React.Component {
               ></video>
 
               <div className="space"/>
-              React を用いて構築したトップページに、高専内の全貌を表示する 2D 地図と、一部の建物を立体的に表示する 3D地図を実装しました。<br />
+              React を用いて構築したトップページに、高専内の全貌を表示する 2D 地図と、一部の建物を立体的に表示する 3D 地図を実装しました。<br />
 
               <div className="space"/>
               2D 地図は、図板作成 Web サービス draw.io を用いて作成した自作画像の上に、地図ライブラリ Leaflet を用いて、
